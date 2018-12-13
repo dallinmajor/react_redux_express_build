@@ -9,6 +9,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "heroku-prebuild": "cd client && npm install",
+    "heroku-postbuild": "cd client && npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Brad Traversy & Gregory Assasie",
